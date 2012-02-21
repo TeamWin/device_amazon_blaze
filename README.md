@@ -23,29 +23,15 @@ chmod a+x repo
 ```
 
 ### Sync with modified CyanogenMod tree.
-
-### For Mac
 ```bash
-./repo init -u git://github.com/IngCr3at1on/android.git -b gingerbread
-./repo sync -j16
-```
-
-### For Ubuntu/Linux
-```bash
-repo init -u git://github.com/IngCr3at1on/android.git -b gingerbread
+repo init -u git://github.com/IngCr3at1on/platform_manifest.git -b gingerbread
 repo sync -j16
 ```
 
-### Download Kindle Fire device tree (No need to pull in Rom manager it is removed in this build)
+### If you would like to build for TWRP (remove the reboot recovery option)
 ```bash
-git clone git://github.com/IngCr3at1on/CM7KF.git device/amazon/blaze
-```
-
-### If you would like to build for TWRP than you need to checkout that branch.
-```bash
-cd device/amazon/blaze
-git checkout gingerbread-twrp
-cd ../../..
+repo init -u git://github.com/IngCr3at1on/platform_manifest.git -b gingerbread-twrp
+repo sync -j16
 ```
 
 ### Compile
