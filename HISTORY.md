@@ -49,3 +49,6 @@
 ### 02/21/2012
 * Broke device and vendor directories into separate repos.
 * Updated README.md: Updated to match new build information, updated support list, added to extra info and updated thanks.
+
+### 02/22/2012
+* Updated readme markdown w/ discussion thread and more extra information and thanks.

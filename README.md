@@ -4,6 +4,7 @@
 
 |||
 |-----------------------------------:|:--------------------------|
+|**Discussion and build thread** | http://forum.xda-developers.com/showthread.php?t=1508802
 |**Whistlestop's Discussion and build thread (deprecated)** | http://forum.xda-developers.com/showthread.php?t=1390773
 |**Skimp Killah's binary build (possibly deprecated?)** | http://forum.xda-developers.com/showthread.php?t=1472609
 |**Takenover83's 'Custom TWRP backup' (for TWRP only, this should be obvious** | http://forum.xda-developers.com/showthread.php?t=1475054
@@ -61,6 +62,9 @@ If the signing process fails try to run it again (the following command is extra
 * If you are coming from stock you will need to move all your books from /sdcard/Books/ to sdcard/kindle/ (please note some of these may need to be redownloaded).
 * There is some confusion regarding the entries "Phone Idle" and "Cell Standby" in the battery/usage stats. This is referring to the device idle and standby, it could just as easily say "Tablet Idle" and "Device Standby" but it wasn't considered in the original creation (this can be resolved w/ an overlay most likely but I have not researched it). Your device battery is not wasting away to some mysterious phone/cell service so sleep easy.
 * By default the lockscreen is disabled; to enable it simply go to 'settings' > 'cyanogenmod settings' > 'tablet tweaks' > uncheck disable lockscreen.
+* You will likely want to install an app to supplement a back button; for this there are button savior and another (allows gestures) which I can't remember currently (someone post the name and I will update this lol).
+* I would also recommend VolumeControl for supplemented sound controls.
+* If for some reason you flash the CWM build in TWRP do NOT select reboot recovery; if you do the device will go into a recovery loop. If you find yourself in such a situation from recovery connect to your computer and from within platform_tools (or wherever you have adb) input 'adb shell idme bootmore 4000'
 
 ### Credits and Thanks
 * JackpotClavin for origin concept build.
@@ -69,3 +73,5 @@ If the signing process fails try to run it again (the following command is extra
 * Pkt_Lnt providing fixes.
 * SkimpKilla for compiling this into something people can flash (even if it is a bit modified ;) ).
 * Takenover83; a custom backup file is the weirdest concept ever but people seem to like it so have at it.
+* Hashcode for awesome work on CM9
+* The CyanogenMod and AOSP teams
