@@ -19,8 +19,8 @@
 ```bash
 mkdir cm7
 cd cm7/
-curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > repo
-chmod a+x repo
+curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > ~/bin/repo
+chmod a+x ~/bin/repo
 ```
 
 ### Sync with modified CyanogenMod tree.

@@ -52,3 +52,4 @@
 
 ### 02/22/2012
 * Updated readme markdown w/ discussion thread and more extra information and thanks.
+* Fix the curl repo instructions.
