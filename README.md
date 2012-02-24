@@ -13,6 +13,10 @@
 
 ### Initialize
 [setup linux/OS X](http://source.android.com/source/initializing.html) please note: it must be sun-java-6, not openjdk
+In addition to the dependencies listed by google you should also install pngcrush (technically speaking the build will complete and work just fine without this but it's ideal to have it anyway, wtf google!)
+```bash
+sudo apt-get install pngcrush
+```
 
 ### Create a Working directory and download Google's repo command
 

@@ -51,5 +51,9 @@
 * Updated README.md: Updated to match new build information, updated support list, added to extra info and updated thanks.
 
 ### 02/22/2012
-* Updated readme markdown w/ discussion thread and more extra information and thanks.
+* Updated readme markdown: add in discussion thread and more extra information and thanks.
 * Fix the curl repo instructions.
+
+### 02/24/2012
+* Updated readme markdown: add in pngcrush as a dependency (really google, you left that out?)
+
