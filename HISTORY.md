@@ -57,3 +57,5 @@
 ### 02/24/2012
 * Updated readme markdown: add in pngcrush as a dependency (really google, you left that out?)
 
+### 02/27/2012
+* Fully deprecate Skimp Killahs thread and build; the domain is broken and the rom is not available (even if it were it is almost as old as the last Whistlestop build).

@@ -5,9 +5,9 @@
 |||
 |-----------------------------------:|:--------------------------|
 |**Discussion and build thread** | http://forum.xda-developers.com/showthread.php?t=1508802
-|**Whistlestop's Discussion and build thread (deprecated)** | http://forum.xda-developers.com/showthread.php?t=1390773
-|**Skimp Killah's binary build (possibly deprecated?)** | http://forum.xda-developers.com/showthread.php?t=1472609
 |**Takenover83's 'Custom TWRP backup' (for TWRP only, this should be obvious** | http://forum.xda-developers.com/showthread.php?t=1475054
+|**Whistlestop's Discussion and build thread (deprecated)** | http://forum.xda-developers.com/showthread.php?t=1390773
+|**Skimp Killah's binary build (deprecated)** **Domain is Parked** | http://forum.xda-developers.com/showthread.php?t=1472609
 
 ## Building 
 
