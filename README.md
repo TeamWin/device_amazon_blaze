@@ -48,6 +48,20 @@ brunch blaze -j$(grep -c processor /proc/cpuinfo)
 This should produce a flashable out/target/product/blaze/cm-7.2.0-RC0-blaze-KANG-signed.zip file. 
 If the signing process fails try to run it again (the following command is extrapolated from the CM9 walkthrough and I have not tested it).
 
+If you have compiled from the primary (gingerbread) branch rather than the TWRP branch you will also
+have a recovery.img found in out/target/product/blaze/ this can be flashed in fastboot using the
+following commands (please note that if you have compiled from the TWRP branch there will still be
+a recovery.img present but it is not useable, please do NOT flash this).
+
+### To flash CWM Recovery (recommending the use of sudo for fastboot as many do not have the correct udev rules)
+First copy the recovery.img to the folder location of your fastboot binary than input the following.
+```bash
+sudo ./fastboot flash recovery recovery.img
+sudo ./fastboot -i 0x1949 idme oem bootmode 4000
+sudo ./fastboot reboot
+```
+
+
 ```bash
 ./device/amazon/blaze/releasetools/ota_from_target_files -v \
            -p out/host/linux-x86 \
@@ -77,5 +91,8 @@ If the signing process fails try to run it again (the following command is extra
 * Pkt_Lnt providing fixes.
 * SkimpKilla for compiling this into something people can flash (even if it is a bit modified ;) ).
 * Takenover83; a custom backup file is the weirdest concept ever but people seem to like it so have at it.
-* Hashcode for awesome work on CM9
-* The CyanogenMod and AOSP teams
+* Hashcode for awesome work on CM9.
+* DooMLoRD (Team UtterChaos) for the CWM Kindle recovery beta and ramdisk reboot scripts.
+* Napstar (Team UtterChaos) for his awesome, yet surprisingly simple touch screen recovery source.
+* Drew Walton (Team Hydro); has provided me assistance time and time again.
+* The CyanogenMod and AOSP teams.

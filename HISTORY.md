@@ -62,3 +62,4 @@
 
 ### 03/02/2012
 * Imported needed changes to build recovery properly.
+* Added recovery information to readme and updated thanks.
