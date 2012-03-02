@@ -65,6 +65,7 @@ a recovery.img present but it is not useable, please do NOT flash this).
 
 ### To flash CWM Recovery (recommending the use of sudo for fastboot as many do not have the correct udev rules)
 First copy the recovery.img to the folder location of your fastboot binary than input the following.
+Reboot your kindle into fastboot mode (honestly the easiest thing to do is have firefirefire installed and simply run your fastboot commands and reboot, you will have to wait for the device for a moment but when firefirefire loads fastboot the commands should issue fine).
 
 ```bash
 sudo ./fastboot flash recovery recovery.img
