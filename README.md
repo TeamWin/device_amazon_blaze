@@ -55,11 +55,13 @@ a recovery.img present but it is not useable, please do NOT flash this).
 
 ### To flash CWM Recovery (recommending the use of sudo for fastboot as many do not have the correct udev rules)
 First copy the recovery.img to the folder location of your fastboot binary than input the following.
+
 ```bash
 sudo ./fastboot flash recovery recovery.img
 sudo ./fastboot -i 0x1949 idme oem bootmode 4000
 sudo ./fastboot reboot
 ```
+
 
 
 ```bash
