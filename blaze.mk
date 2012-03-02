@@ -5,6 +5,15 @@ $(call inherit-product-if-exists, vendor/amazon/blaze/blaze-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/amazon/blaze/overlay
 
+# Copy over the custom reboot scripts and their binary counterparts for recovery (courtesy of DoomLoRD)
+PRODUCT_COPY_FILES += \
+    device/amazon/blaze/recovery/root/sbin/fbmode:recovery/root/sbin/fbmode \
+    device/amazon/blaze/recovery/root/sbin/nbmode:recovery/root/sbin/nbmode \
+    device/amazon/blaze/recovery/root/sbin/rcmode:recovery/root/sbin/rcmode \
+    device/amazon/blaze/recovery/root/sbin/reboot_fastboot:recovery/root/sbin/reboot_fastboot \
+    device/amazon/blaze/recovery/root/sbin/reboot_recovery:recovery/root/sbin/reboot_recovery \
+    device/amazon/blaze/recovery/root/sbin/reboot_system:recovery/root/sbin/reboot_system
+
 PRODUCT_COPY_FILES += \
     device/amazon/blaze/root/init.rc:root/init.rc \
     device/amazon/blaze/root/init.omap4430.rc:root/init.omap4430.rc \

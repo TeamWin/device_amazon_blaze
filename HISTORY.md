@@ -59,3 +59,6 @@
 
 ### 02/27/2012
 * Fully deprecate Skimp Killahs thread and build; the domain is broken and the rom is not available (even if it were it is almost as old as the last Whistlestop build).
+
+### 03/02/2012
+* Imported needed changes to build recovery properly.
