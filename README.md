@@ -48,6 +48,16 @@ brunch blaze -j$(grep -c processor /proc/cpuinfo)
 This should produce a flashable out/target/product/blaze/cm-7.2.0-RC0-blaze-KANG-signed.zip file. 
 If the signing process fails try to run it again (the following command is extrapolated from the CM9 walkthrough and I have not tested it).
 
+
+```bash
+./device/amazon/blaze/releasetools/ota_from_target_files -v \
+           -p out/host/linux-x86 \
+           -k build/target/product/security/testkey \
+           --backup=true \
+           --override_device=auto \
+           out/target/product/blaze/obj/PACKAGING/target_files_intermediates/cyanogen_blaze_target_files-eng.$USER.zip out/target/product/blaze/cm-7.2.0-RC0-blaze-KANG-signed.zip
+```
+
 If you have compiled from the primary (gingerbread) branch rather than the TWRP branch you will also
 have a recovery.img found in out/target/product/blaze/ this can be flashed in fastboot using the
 following commands (please note that if you have compiled from the TWRP branch there will still be
@@ -60,17 +70,6 @@ First copy the recovery.img to the folder location of your fastboot binary than 
 sudo ./fastboot flash recovery recovery.img
 sudo ./fastboot -i 0x1949 idme oem bootmode 4000
 sudo ./fastboot reboot
-```
-
-
-
-```bash
-./device/amazon/blaze/releasetools/ota_from_target_files -v \
-           -p out/host/linux-x86 \
-           -k build/target/product/security/testkey \
-           --backup=true \
-           --override_device=auto \
-           out/target/product/blaze/obj/PACKAGING/target_files_intermediates/cyanogen_blaze_target_files-eng.$USER.zip out/target/product/blaze/cm-7.2.0-RC0-blaze-KANG-signed.zip
 ```
 
 ###Notes for compiling on Mac OS X (by davidnintendo)
