@@ -63,3 +63,4 @@
 ### 03/02/2012
 * Imported needed changes to build recovery properly.
 * Added recovery information to readme and updated thanks.
+* Updated readme to use HTTP (this is githubs preferred delivery system and has proven to be more stable than normal git) (this has been tested by the CyanogenMod organization and I can confirm more stable syncs with this method).

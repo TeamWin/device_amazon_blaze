@@ -29,13 +29,13 @@ chmod a+x ~/bin/repo
 
 ### Sync with modified CyanogenMod tree.
 ```bash
-repo init -u git://github.com/IngCr3at1on/platform_manifest.git -b gingerbread
+repo init -u http://github.com/IngCr3at1on/platform_manifest.git -b gingerbread
 repo sync -j16
 ```
 
 ### If you would like to build for TWRP (remove the reboot recovery option)
 ```bash
-repo init -u git://github.com/IngCr3at1on/platform_manifest.git -b gingerbread-twrp
+repo init -u http://github.com/IngCr3at1on/platform_manifest.git -b gingerbread-twrp
 repo sync -j16
 ```
 
