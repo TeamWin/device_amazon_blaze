@@ -67,3 +67,6 @@
 
 ### 03/14/2012
 * Minor build prop changes to try to improve battery life.
+
+### 03/25/2012
+* Added vendorsetup.sh; put blaze on the lunch menu.
