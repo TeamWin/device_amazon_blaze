@@ -5,7 +5,7 @@
 |||
 |-----------------------------------:|:--------------------------|
 |**Discussion and build thread** | http://forum.xda-developers.com/showthread.php?t=1508802
-|**Takenover83's 'Custom TWRP backup' (for TWRP only, this should be obvious** | http://forum.xda-developers.com/showthread.php?t=1475054
+|**Takenover83's 'Custom backup'** | http://forum.xda-developers.com/showthread.php?t=1475054
 |**Whistlestop's Discussion and build thread (deprecated)** | http://forum.xda-developers.com/showthread.php?t=1390773
 |**Skimp Killah's binary build (deprecated)** **Domain is Parked** | http://forum.xda-developers.com/showthread.php?t=1472609
 
@@ -42,11 +42,23 @@ repo sync -j16
 ### Compile
 ```bash
 source build/envsetup.sh
-brunch blaze -j$(grep -c processor /proc/cpuinfo)
+lunch
+```
+
+Select blaze (4)
+
+```bash
+make -j$(grep -c processor /proc/cpuinfo) bacon
 ```
 
 This should produce a flashable out/target/product/blaze/cm-7.2.0-RC0-blaze-KANG-signed.zip file. 
 If the signing process fails try to run it again (the following command is extrapolated from the CM9 walkthrough and I have not tested it).
+
+To compile a recovery image only (for standard gingerbread branch only | do not try to use the recovery.img produced from the twrp branch) you can use the following.
+
+```bash
+make recoveryimage
+```
 
 
 ```bash
