@@ -54,13 +54,6 @@ make -j$(grep -c processor /proc/cpuinfo) bacon
 This should produce a flashable out/target/product/blaze/cm-7.2.0-RC0-blaze-KANG-signed.zip file. 
 If the signing process fails try to run it again (the following command is extrapolated from the CM9 walkthrough and I have not tested it).
 
-To compile a recovery image only (for standard gingerbread branch only | do not try to use the recovery.img produced from the twrp branch) you can use the following.
-
-```bash
-make recoveryimage
-```
-
-
 ```bash
 ./device/amazon/blaze/releasetools/ota_from_target_files -v \
            -p out/host/linux-x86 \
@@ -74,6 +67,12 @@ If you have compiled from the primary (gingerbread) branch rather than the TWRP 
 have a recovery.img found in out/target/product/blaze/ this can be flashed in fastboot using the
 following commands (please note that if you have compiled from the TWRP branch there will still be
 a recovery.img present but it is not useable, please do NOT flash this).
+
+To compile a recovery image only (for standard gingerbread branch only | do not try to use the recovery.img produced from the twrp branch) you can use the following.
+
+```bash
+make recoveryimage
+```
 
 ### To flash CWM Recovery (recommending the use of sudo for fastboot as many do not have the correct udev rules)
 First copy the recovery.img to the folder location of your fastboot binary than input the following.
