@@ -70,3 +70,7 @@
 
 ### 03/25/2012
 * Added vendorsetup.sh; put blaze on the lunch menu.
+
+### 03/28/2012
+* Merged [pull request](https://github.com/IngCr3at1on/android_device_amazon_blaze/commit/db9c85795901191582813e23447bfc62c46edde4) from Smirkis: changes power button to back instead of select.
+
