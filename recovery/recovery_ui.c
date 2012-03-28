@@ -83,7 +83,7 @@ int device_handle_key(int key_code, int visible) {
 
             case KEY_POWER:
                 if (ui_get_showing_back_button()) {
-                    return SELECT_ITEM;
+                    return GO_BACK;
                 }
                 if (!get_allow_toggle_display())
                     return GO_BACK;
