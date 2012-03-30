@@ -75,3 +75,6 @@
 * Merged [pull request](https://github.com/IngCr3at1on/android_device_amazon_blaze/commit/db9c85795901191582813e23447bfc62c46edde4) from Smirkis: changes power button to back instead of select.
 * Updated readme to reflect recent addition to lunch menu.
 
+### 03/30/2012
+* Changed recovery_ui to display 'reboot system now' instead of 'reboot options'; accompanying changes made to bootable_recovery.
+

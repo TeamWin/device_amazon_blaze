@@ -27,7 +27,7 @@ char* MENU_HEADERS[] = { "Amazon Kindle Fire, CWMTouch (courtesy of Team UtterCh
 
 //char* MENU_HEADERS[] = { NULL };
 
-char* MENU_ITEMS[] = { "reboot options",
+char* MENU_ITEMS[] = { "reboot system now",
                        "install zip from sdcard",
                        "apply /sdcard/update.zip",
                        "factory reset",
