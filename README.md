@@ -21,6 +21,7 @@ sudo apt-get install pngcrush
 
 ### Create a Working directory and download Google's repo command
 ```bash
+mkdir ~/bin
 mkdir cm7
 cd cm7/
 curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > ~/bin/repo

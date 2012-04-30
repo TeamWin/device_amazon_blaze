@@ -78,3 +78,6 @@
 ### 03/30/2012
 * Changed recovery_ui to display 'reboot system now' instead of 'reboot options'; accompanying changes made to bootable_recovery.
 
+### 04/30/2012
+* Updated readme markdown: create bin dir before trying to curl repo
+
