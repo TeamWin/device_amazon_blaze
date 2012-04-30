@@ -79,5 +79,5 @@
 * Changed recovery_ui to display 'reboot system now' instead of 'reboot options'; accompanying changes made to bootable_recovery.
 
 ### 04/30/2012
-* Updated readme markdown: create bin dir before trying to curl repo
+* Updated readme markdown: create bin dir before trying to curl repo and set your path.
 

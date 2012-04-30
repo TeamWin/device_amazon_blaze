@@ -28,6 +28,11 @@ curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > ~/bin/repo
 chmod a+x ~/bin/repo
 ```
 
+### Ubuntu 12.04 seems to have some issues retaining the path to ~/bin, subsequently you may require the following:
+```bash
+PATH=~/bin:$PATH
+```
+
 ### Sync with modified CyanogenMod tree.
 ```bash
 repo init -u http://github.com/IngCr3at1on/platform_manifest.git -b gingerbread
