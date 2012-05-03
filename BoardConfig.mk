@@ -110,3 +110,6 @@ WIFI_DRIVER_FW_AP_PATH      := "/system/etc/wifi/softap/firmware_ap.bin"
 #BOARD_HAS_NO_SELECT_BUTTON := true
 # Use this flag if the board has a ext4 partition larger than 2gb
 BOARD_HAS_LARGE_FILESYSTEM := true
+
+# Add support for FFF 1.4 recovery selection
+TARGET_RECOVERY_PRE_COMMAND := "idme postmode 1;"

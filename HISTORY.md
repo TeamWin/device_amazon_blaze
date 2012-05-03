@@ -81,3 +81,5 @@
 ### 04/30/2012
 * Updated readme markdown: create bin dir before trying to curl repo and set your path.
 
+### 05/03/2012
+* Added support for bootmode override of FFF 1.4 (this in conjunction w/ FFF 1.4 fully deprecates the TWRP {no recovery reboot option} branch).
