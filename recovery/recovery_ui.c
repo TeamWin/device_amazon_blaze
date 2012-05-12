@@ -20,12 +20,7 @@
 #include "common.h"
 #include "extendedcommands.h"
 
-
-char* MENU_HEADERS[] = { "Amazon Kindle Fire, CWMTouch (courtesy of Team UtterChaos)",
-                         "",
-                         NULL };
-
-//char* MENU_HEADERS[] = { NULL };
+char* MENU_HEADERS[] = { NULL };
 
 char* MENU_ITEMS[] = { "reboot system now",
                        "install zip from sdcard",
