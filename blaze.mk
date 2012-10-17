@@ -7,12 +7,12 @@ DEVICE_PACKAGE_OVERLAYS += device/amazon/blaze/overlay
 
 # Copy over the custom reboot scripts and their binary counterparts for recovery (courtesy of DoomLoRD)
 PRODUCT_COPY_FILES += \
-    device/amazon/blaze/recovery/root/sbin/fbmode:recovery/root/sbin/fbmode \
-    device/amazon/blaze/recovery/root/sbin/nbmode:recovery/root/sbin/nbmode \
-    device/amazon/blaze/recovery/root/sbin/rcmode:recovery/root/sbin/rcmode \
-    device/amazon/blaze/recovery/root/sbin/reboot_fastboot:recovery/root/sbin/reboot_fastboot \
-    device/amazon/blaze/recovery/root/sbin/reboot_recovery:recovery/root/sbin/reboot_recovery \
-    device/amazon/blaze/recovery/root/sbin/reboot_system:recovery/root/sbin/reboot_system
+    device/amazon/blaze/recovery/root/sbin/parted:recovery/root/sbin/parted \
+    device/amazon/blaze/recovery/root/sbin/idme:recovery/root/sbin/idme \
+    device/amazon/blaze/recovery/root/sbin/poweroff.sh:recovery/root/sbin/poweroff.sh \
+    device/amazon/blaze/recovery/root/sbin/rebootbootloader.sh:recovery/root/sbin/rebootbootloader.sh \
+    device/amazon/blaze/recovery/root/sbin/rebootrecovery.sh:recovery/root/sbin/rebootrecovery.sh \
+    device/amazon/blaze/recovery/root/sbin/rebootsystem.sh:recovery/root/sbin/rebootsystem.sh
 
 PRODUCT_COPY_FILES += \
     device/amazon/blaze/root/init.rc:root/init.rc \
@@ -84,7 +84,7 @@ net.bt.name=Android \
 dalvik.vm.stack-trace-file=/data/anr/traces.txt \
 
 # Use added less_full_base.mk to remove unwanted apps
-$(call inherit-product, build/target/product/less_full_base.mk)
+#$(call inherit-product, build/target/product/less_full_base.mk)
 
 # Set mdpi locale after inheritting base.mk (corrects default language loading as MD)
 PRODUCT_LOCALES += mdpi
@@ -92,3 +92,4 @@ PRODUCT_LOCALES += mdpi
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := full_blaze
 PRODUCT_DEVICE := blaze
+PRODUCT_BRAND := Amazon
